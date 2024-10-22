@@ -4,8 +4,7 @@ import Work from "./components/Work"
 import Stripes from "./components/Stripes"
 import Products from "./components/Products"
 import Marquees from "./components/Marquees"
-
-
+import Cards from "./components/Cards"
 function App() {
 
   return (
@@ -13,10 +12,10 @@ function App() {
     <div className="min-h-screen w-full font-['satoshi_variable'] bg-zinc-900 text-white">
       <Navbar/>
       <Work/>
-      <Stripes />
+      <Stripes/>
       <Products/>
       <Marquees/>
-
+      <Cards/>
     </div>
     </>
   )
