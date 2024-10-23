@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Product from "./Product";
+import { motion } from "framer-motion"
 
+import arqitel from "../assets/video/arqitel.webm"
+import ttr from "../assets/video/ttr.webm"
+import yahoo from "../assets/video/yahoo.webm"
+import yir from "../assets/video/yir.webm"
 
 const Products=()=>{
+    const [pos,setPos]=useState(0);
+
+    const mover=(val)=>{
+        setPos(val*23);
+    }
+    
     var products=[
     {
         title:"Arqitel",
@@ -30,8 +41,40 @@ const Products=()=>{
     }
 ]
     return(
-        <div>
-            {products.map((val,index)=><Product key={index} val={val}/>)}
+        <div className="mt-32 relative">
+            {products.map((val,index)=><Product key={index} index={index} mover={mover} val={val}/>)}
+            <div className="absolute top-0 h-full w-full pointer-events-none">
+                <motion.div 
+                initial={{ y:pos, x:"-50%" }} 
+                transition={{ease:[0.76, 0, 0.24, 1],duration:0.6}}
+                animate={{y:pos+`rem`}}
+                className="absolute h-[23rem] bg-white w-[32rem] left-[44%] -translate-x-[50%] overflow-hidden">
+                    <motion.div animate={{y:-pos+`rem`}} transition={{ease:[0.76, 0, 0.24, 1],duration:0.5}} className="w-full h-full">
+                        <video autoPlay muted loop>
+                            <source src={arqitel} type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+`rem`}} transition={{ease:[0.76, 0, 0.24, 1],duration:0.5}} className="w-full h-full">
+                        <video autoPlay muted loop>
+                            <source src={ttr} type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+`rem`}} transition={{ease:[0.76, 0, 0.24, 1],duration:0.5}} className="w-full h-full">
+                        <video autoPlay muted loop>
+                            <source src={yir} type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+`rem`}} transition={{ease:[0.76, 0, 0.24, 1],duration:0.5}} className="w-full h-full">
+                        <video autoPlay muted loop>
+                            <source src={yahoo} type="video/webm" />
+                            Your browser does not support the video tag.
+                        </video>
+                    </motion.div>
+                </motion.div>
+            </div>
         </div>
     )
 }
