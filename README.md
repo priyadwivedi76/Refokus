@@ -9,30 +9,6 @@ Refokus is a dynamic React application that enhances user experience through smo
 - **Smooth Animations**: Leveraging Framer Motion for fluid transitions and animations.
 - **Parallax Scrolling**: Using Locomotive Scroll for an engaging scroll experience.
 
-## Components
-
-src/
-│
-├── components/
-│   ├── AnimationWrapper/
-│   │   ├── AnimationWrapper.js
-│   │   └── AnimationWrapper.css
-│   ├── Header/
-│   │   ├── Header.js
-│   │   └── Header.css
-│   ├── Footer/
-│   │   ├── Footer.js
-│   │   └── Footer.css
-│   ├── Home/
-│   │   ├── Home.js
-│   │   └── Home.css
-│   └── ScrollSection/
-│       ├── ScrollSection.js
-│       └── ScrollSection.css
-│
-├── App.js
-├── index.js
-└── styles.css
 
 ## Acknowledgments
 
