@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Product from "./Product";
 import { motion } from "framer-motion"
 
-import arqitel from "../assets/video/arqitel.webm"
-import ttr from "../assets/video/ttr.webm"
-import yahoo from "../assets/video/yahoo.webm"
-import yir from "../assets/video/yir.webm"
+import arqitel from "../../assets/video/arqitel.webm"
+import yir from "../../assets/video/yir.webm"
+import yahoo from "../../assets/video/yahoo.webm"
+import ttr  from "../../assets/video/ttr.webm"
 
 const Products=()=>{
     const [pos,setPos]=useState(0);
