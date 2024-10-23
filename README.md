@@ -1,8 +1,43 @@
-# React + Vite
+# Refokus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
 
-Currently, two official plugins are available:
+Refokus is a dynamic React application that enhances user experience through smooth animations and scrolling effects using [Framer Motion](https://www.framer.com/docs/) and [Locomotive Scroll](https://locomotivemtl.github.io/locomotive-scroll/). This project aims to create a visually appealing and interactive platform, making content engagement more enjoyable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Smooth Animations**: Leveraging Framer Motion for fluid transitions and animations.
+- **Parallax Scrolling**: Using Locomotive Scroll for an engaging scroll experience.
+
+## Components
+
+src/
+│
+├── components/
+│   ├── AnimationWrapper/
+│   │   ├── AnimationWrapper.js
+│   │   └── AnimationWrapper.css
+│   ├── Header/
+│   │   ├── Header.js
+│   │   └── Header.css
+│   ├── Footer/
+│   │   ├── Footer.js
+│   │   └── Footer.css
+│   ├── Home/
+│   │   ├── Home.js
+│   │   └── Home.css
+│   └── ScrollSection/
+│       ├── ScrollSection.js
+│       └── ScrollSection.css
+│
+├── App.js
+├── index.js
+└── styles.css
+
+## Acknowledgments
+
+We would like to thank the following projects and contributors for their incredible work:
+
+Framer Motion - A powerful library for creating animations in React.
+Locomotive Scroll - A simple and easy-to-use library for smooth scrolling and parallax effects.
+Our community of contributors for their feedback and support.
